@@ -1,0 +1,62 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap');
+
+.profile-main {
+  margin: auto;
+  max-width: 815px;
+  padding: 143px;
+}
+
+.page-profile {
+  font-family: 'Noto Sans KR', sans-serif;
+}
+
+.profile-part1 {
+  display: flex;
+  align-items: center;
+  margin-bottom: 91px;
+}
+
+.page-profile-image-wrapper {
+  width: 287px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: #c1c1c1;
+}
+
+.page-profile-informations-wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  margin-left: 102px;
+}
+
+.profileBox {
+  display: flex;
+  align-items: center;
+}
+
+.profileBox > ul > li {
+  list-style-position: inside;
+}
+
+.profile-name {
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.profile-label {
+  font-weight: bold;
+  font-size: 28px;
+  margin-right: 91px;
+}
+
+.introduction {
+  flex-direction: column;
+  align-items: normal;
+}
+
+.profile-introduction {
+  margin-top: 37px;
+  max-width: 770px;
+}
