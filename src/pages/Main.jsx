@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import LectureCard from '../components/card/LectureCard';
 import './Main.css';
+import ProfileCard from '../components/card/ProfileCard';
 
 function Main() {
   return (
@@ -37,13 +38,18 @@ function Main() {
       </section>
       <section className="main-latest-profile-container">
         <header className="main-latest-profile-header">
-          <h3>최신 등록된 과외 목록</h3>
+          <h3>새로 등장한 전문가</h3>
           <Link className="main-latest-profile-more" to="/">
             전체보기 &gt;
           </Link>
         </header>
         <section className="main-latest-profile-items">
-          <div>나중에 프로필 넣을 거임.</div>
+          <ProfileCard />
+          <ProfileCard />
+          <ProfileCard />
+          <ProfileCard />
+          <ProfileCard />
+          <ProfileCard />
         </section>
       </section>
     </main>
