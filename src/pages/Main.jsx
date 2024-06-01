@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import LectureCard from '../components/card/LectureCard';
 import './Main.css';
 import ProfileCard from '../components/card/ProfileCard';
-import CategoryAside from '../components/aside/CategoryAside';
 
 function Main() {
   return (
@@ -53,7 +52,6 @@ function Main() {
           <ProfileCard />
         </section>
       </section>
-      <CategoryAside />
     </main>
   );
 }

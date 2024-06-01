@@ -13,7 +13,7 @@ function Navbar() {
           <Link className="header-site-logo" to="/">
             기가 막힌 로고
           </Link>
-          <Link className="header-category" to="/">
+          <Link className="header-category" to="/category">
             카테고리 보기
           </Link>
           <form className="header-search-box" action="" method="get">
