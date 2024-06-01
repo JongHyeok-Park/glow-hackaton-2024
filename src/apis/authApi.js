@@ -6,7 +6,7 @@ import { getCookie } from '../utils/cookieManage';
  * @returns accessToken, refreshToken
  */
 const getLogin = async (code) => {
-  const res = await fetch(`${process.env.REACT_APP_API_URL}/api/auth/login?code=${code}`);
+  const res = await fetch(`${process.env.REACT_APP_API_URL_A}/api/auth/login?code=${code}`);
 
   if (!res.ok) {
     const message = await res.text();
@@ -21,7 +21,7 @@ const getLogin = async (code) => {
  * @returns accessToken, refreshToken
  */
 const patchLogin = async () => {
-  const res = await fetch(`${process.env.REACT_APP_API_URL}/api/auth/login`, {
+  const res = await fetch(`${process.env.REACT_APP_API_URL_A}/api/auth/login`, {
     method: 'PATCH',
     headers: {
       authorization: `Bearer ${getCookie('refreshToken')}`,
