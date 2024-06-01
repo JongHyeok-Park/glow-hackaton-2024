@@ -1,7 +1,7 @@
 import { getCookie } from '../utils/cookieManage';
 
 const getProfile = async (id) => {
-  const res = await fetch(`${process.env.REACT_APP_API_URL}/api/profile?id=${id}`);
+  const res = await fetch(`${process.env.REACT_APP_API_URL_A}/api/profile?id=${id}`);
 
   if (!res.ok) {
     const message = await res.text();
@@ -12,7 +12,7 @@ const getProfile = async (id) => {
 };
 
 const postProfile = async (data) => {
-  const res = await fetch(`${process.env.REACT_APP_API_URL}/api/profile`, {
+  const res = await fetch(`${process.env.REACT_APP_API_URL_A}/api/profile`, {
     method: 'POST',
     headers: {
       authorization: `Bearer ${getCookie('accessToken')}`,

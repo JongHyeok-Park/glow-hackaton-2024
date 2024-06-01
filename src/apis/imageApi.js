@@ -1,7 +1,7 @@
 import { getCookie } from '../utils/cookieManage';
 
 const postImage = async (image) => {
-  const res = fetch(`${process.env.REACT_APP_API_URL}/api/image`, {
+  const res = await fetch(`${process.env.REACT_APP_API_URL_B}/api/image`, {
     method: 'POST',
     headers: {
       authorization: `Bearer ${getCookie('accessToken')}`,
@@ -18,7 +18,7 @@ const postImage = async (image) => {
 };
 
 const deleteImage = async (id) => {
-  const res = fetch(`${process.env.REACT_APP_API_URL}/api/image?id=${id}`, {
+  const res = await fetch(`${process.env.REACT_APP_API_URL_B}/api/image?id=${id}`, {
     method: 'DELETE',
     headers: {
       authorization: `Bearer ${getCookie('accessToken')}`,
