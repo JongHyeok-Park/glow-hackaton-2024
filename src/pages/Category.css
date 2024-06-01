@@ -1,0 +1,14 @@
+.category {
+  width: 1200px;
+  margin: auto;
+  padding: 80px 0;
+  display: flex;
+}
+
+.category-items {
+  width: 915px;
+  margin-left: auto;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 40px;
+}

@@ -1,0 +1,20 @@
+.category-lecture {
+  margin-bottom: 20px;
+}
+
+.category-lecture-title {
+  margin-bottom: 10px;
+}
+
+.category-lecture-list {
+  list-style: none;
+}
+
+.category-lecture-list > li {
+  margin-bottom: 10px;
+}
+
+.category-lecture-list > li > a {
+  text-decoration: none;
+  color: black;
+}
