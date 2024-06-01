@@ -1,0 +1,12 @@
+.chat-date {
+  width: fit-content;
+  padding: 5px 25px;
+  background: var(--neutral-color3);
+  margin: 0 auto 10px auto;
+  border-radius: 20px;
+}
+
+.chat-date > span {
+  color: var(--neutral-color1);
+  font-size: 12px;
+}
