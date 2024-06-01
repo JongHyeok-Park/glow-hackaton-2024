@@ -1,23 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import { Route, Routes } from 'react-router-dom'
-import Main from './pages/Main'
+import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Main from './pages/Main';
+import Navbar from './components/navbar/Navbar';
+import Footer from './components/footer/Footer';
 
 function App() {
-  const [count, setCount] = useState(0)
-
   return (
     <>
-      <header>
-        상단 메뉴
-      </header>
+      <Navbar />
       <Routes>
-        <Route path='/' element={<Main />}/>
+        <Route path="/" element={<Main />} />
       </Routes>
+      <Footer />
     </>
-  )
+  );
 }
 
-export default App
+export default App;

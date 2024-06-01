@@ -1,0 +1,74 @@
+.main {
+  max-width: 1200px;
+  margin: auto;
+  padding: 80px 0;
+}
+
+/* Lectures */
+.main-latest-lecture-container {
+  margin-bottom: 80px;
+}
+
+.main-latest-lecture-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-latest-lecture-more {
+  margin-left: auto;
+  color: var(--neutral-color1);
+  text-decoration: none;
+}
+
+.main-latest-lecture-items {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+}
+
+/* Mentorings */
+.main-latest-mentoring-container {
+  margin-bottom: 80px;
+}
+
+.main-latest-mentoring-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-latest-mentoring-more {
+  margin-left: auto;
+  color: var(--neutral-color1);
+  text-decoration: none;
+}
+
+.main-latest-mentoring-items {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+}
+
+/* Profiles */
+.main-latest-profile-container {
+  margin-bottom: 80px;
+}
+
+.main-latest-profile-header {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.main-latest-profile-more {
+  margin-left: auto;
+  color: var(--neutral-color1);
+  text-decoration: none;
+}
+
+.main-latest-profile-items {
+  display: flex;
+  width: 100%;
+  gap: 50px;
+}
