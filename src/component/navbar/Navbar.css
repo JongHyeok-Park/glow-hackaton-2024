@@ -36,24 +36,30 @@
   border: 1px #000000 solid;
   border-radius: 20px;
   display: flex;
+  align-items: center;
+  width: 480px;
+  height: 42px;
+  overflow: hidden;
+  padding: 0 9px;
+  box-sizing: border-box;
+}
+
+.header-search-box:hover {
+  background-color: aliceblue;
 }
 
 .search-txt {
   border: none;
-  border-radius: 20px 0 0 20px;
-  padding: 0;
-  margin: 0;
+  width: 100%;
+  outline: none;
+  height: 100%;
+  background: none;
 }
 
 .search-btn {
-  display: flex;
-  align-items: center;
   border: none;
-  border-radius: 0 20px 20px 0;
-  background-color: transparent;
-  margin: 1px;
-  padding: 3px;
+  background: none;
   cursor: pointer;
-  width: 24px;
-  height: 24px;
+  padding: 0;
+  margin-left: 10px;
 }
