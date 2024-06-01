@@ -4,10 +4,17 @@
   gap: 5px;
 }
 
-.profile-image {
+.profile-image-wrapper {
   width: 45px;
-  height: 45px;
-  border-radius: 50%;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: #c1c1c1;
+}
+
+.profile-image {
+  width: 100%;
+  aspect-ratio: 1;
   background-color: #c1c1c1;
 }
 

@@ -1,6 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import './Navbar.css';
+import searchUrl from '../../assets/icon/search-icon.png';
 
 import NavbarProfile from './NavbarProfile';
 
@@ -18,7 +19,7 @@ function Navbar() {
           <form className="header-search-box" action="" method="get">
             <input className="search-txt" type="search" name="search-txt" />
             <button className="search-btn" type="submit">
-              <img src="../src/assets/icon/search-icon.png" alt="검색" />
+              <img src={searchUrl} alt="검색" />
             </button>
           </form>
         </nav>
