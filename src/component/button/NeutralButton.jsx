@@ -1,10 +1,12 @@
 import React from 'react';
 import './NeutralButton.css';
 
-function NeutralButton(props) {
+function NeutralButton() {
   return (
     <div className="neutral-btn-wrapper">
-      <button className="neutral-btn">버튼</button>
+      <button className="neutral-btn" type="button">
+        버튼
+      </button>
     </div>
   );
 }

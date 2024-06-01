@@ -1,10 +1,12 @@
 import React from 'react';
 import './PrimaryButton.css';
 
-function PrimaryButton(props) {
+function PrimaryButton() {
   return (
     <div className="primary-btn-wrapper">
-      <button className="primary-btn">버튼</button>
+      <button className="primary-btn" type="button">
+        버튼
+      </button>
     </div>
   );
 }
