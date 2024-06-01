@@ -11,6 +11,21 @@ const getProfile = async (id) => {
   return res.json();
 };
 
+const getMyProfile = async (id) => {
+  const res = await fetch(`${import.meta.env.VITE_APP_API_URL_A}/api/profile?id=${id}`, {
+    headers: {
+      authorization: `Bearer ${getCookie('accessToken')}`,
+    },
+  });
+
+  if (!res.ok) {
+    const message = await res.text();
+    throw new Error(message);
+  }
+
+  return res.json();
+};
+
 const postProfile = async (data) => {
   const res = await fetch(`${import.meta.env.VITE_APP_API_URL_A}/api/profile`, {
     method: 'POST',
@@ -28,4 +43,4 @@ const postProfile = async (data) => {
   return res.text();
 };
 
-export { getProfile, postProfile };
+export { getProfile, postProfile, getMyProfile };
