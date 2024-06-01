@@ -1,9 +1,42 @@
 import { Link } from 'react-router-dom';
+import { useEffect } from 'react';
 import LectureCard from '../components/card/LectureCard';
 import './Main.css';
 import ProfileCard from '../components/card/ProfileCard';
+import useLectureListStore from '../store/useLectureListStore';
+import { getLectureList } from '../apis/lectureApi';
+import useMentoringListStore from '../store/useMentoringList';
+import { getMentoringList } from '../apis/mentoringApi';
 
 function Main() {
+  const { lectureList, setLectureList } = useLectureListStore();
+  const { mentoringList, setMentoringList } = useMentoringListStore();
+
+  const searchLatestLectureList = () => {
+    getLectureList(5, 0)
+      .then((data) => {
+        setLectureList(data.content);
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
+
+  const searchLatestMentoringList = () => {
+    getMentoringList(5, 0)
+      .then((data) => {
+        setMentoringList(data.content);
+      })
+      .catch((error) => {
+        alert(error.message);
+      });
+  };
+
+  useEffect(() => {
+    searchLatestLectureList();
+    searchLatestMentoringList();
+  }, []);
+
   return (
     <main className="main">
       <section className="main-latest-lecture-container">
@@ -14,11 +47,20 @@ function Main() {
           </Link>
         </header>
         <section className="main-latest-lecture-items">
-          <LectureCard />
-          <LectureCard />
-          <LectureCard />
-          <LectureCard />
-          <LectureCard />
+          {lectureList?.map((item) => {
+            return (
+              <LectureCard
+                id={item.id}
+                title={item.title}
+                subject={item.subject}
+                description={item.description}
+                category={item.category}
+                startTime={item.startTime}
+                type="lecture"
+                key={item.id}
+              />
+            );
+          })}
         </section>
       </section>
       <section className="main-latest-mentoring-container">
@@ -29,11 +71,20 @@ function Main() {
           </Link>
         </header>
         <section className="main-latest-mentoring-items">
-          <LectureCard />
-          <LectureCard />
-          <LectureCard />
-          <LectureCard />
-          <LectureCard />
+          {mentoringList?.map((item) => {
+            return (
+              <LectureCard
+                id={item.id}
+                title={item.title}
+                subject={item.subject}
+                description={item.description}
+                category={item.category}
+                startTime={item.startTime}
+                type="mentor"
+                key={item.id}
+              />
+            );
+          })}
         </section>
       </section>
       <section className="main-latest-profile-container">

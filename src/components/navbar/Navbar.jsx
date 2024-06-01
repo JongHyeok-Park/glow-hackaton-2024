@@ -4,8 +4,11 @@ import './Navbar.css';
 import searchUrl from '../../assets/icon/search-icon.png';
 
 import NavbarProfile from './NavbarProfile';
+import useUserStore from '../../store/useProfileStore';
 
 function Navbar() {
+  const { user } = useUserStore();
+
   return (
     <header className="header">
       <div className="header-wrapper">
@@ -23,7 +26,7 @@ function Navbar() {
             </button>
           </form>
         </nav>
-        <NavbarProfile />
+        {user ? <NavbarProfile /> : <Link to="/">로그인</Link>}
       </div>
     </header>
   );

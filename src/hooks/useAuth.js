@@ -36,6 +36,10 @@ function useAuth() {
     setCode(searchParams.get('code'));
   }, [searchParams]);
 
+  useEffect(() => {
+    login();
+  }, [code]);
+
   return { login, reissue };
 }
 
