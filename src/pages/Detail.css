@@ -1,0 +1,23 @@
+.detail {
+  display: flex;
+  width: 1200px;
+  margin: auto;
+  padding: 80px 0;
+  gap: 20px;
+}
+
+.detail-left {
+  width: calc(8 / 12 * 100%);
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.detail-right {
+  width: calc(4 / 12 * 100%);
+}
+
+.detail-image-wrapper {
+  height: 350px;
+  background-color: #d9d9d9;
+}

@@ -1,0 +1,27 @@
+.profile {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.profile-image-wrapper {
+  width: 45px;
+  aspect-ratio: 1;
+  border-radius: 100%;
+  overflow: hidden;
+  background-color: #c1c1c1;
+}
+
+.profile-image {
+  width: 100%;
+  aspect-ratio: 1;
+  background-color: #c1c1c1;
+}
+
+.dowm-wrapper {
+  cursor: pointer;
+}
+
+.down-icon {
+  width: 15px;
+}

@@ -1,0 +1,20 @@
+.category-mentoring {
+  margin-bottom: 20px;
+}
+
+.category-mentoring-title {
+  margin-bottom: 10px;
+}
+
+.category-mentorung-list {
+  list-style: none;
+}
+
+.category-mentorung-list > li {
+  margin-bottom: 10px;
+}
+
+.category-mentorung-list > li > a {
+  text-decoration: none;
+  color: black;
+}
