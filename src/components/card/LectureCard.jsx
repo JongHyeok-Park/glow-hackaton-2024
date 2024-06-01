@@ -1,11 +1,12 @@
+import { Link } from 'react-router-dom';
 import dateFormat from '../../utils/dateFormat';
 import './LectureCard.css';
 
 function LectureCard(props) {
-  const { title, subject, description, category, startTime, image } = props;
+  const { id, title, subject, description, category, startTime, image, type } = props;
 
   return (
-    <article className="lecture-card">
+    <Link className="lecture-card" to={`/detail/${type}/${id}`}>
       <figure className="lecture-card-image-wrapper">{image?.img ? <img src={image?.img} alt="" /> : null}</figure>
       <section className="lecture-card-content-wrapper">
         <h4 className="lecture-card-title">{title}</h4>
@@ -16,7 +17,7 @@ function LectureCard(props) {
         <span className="lecture-card-category">{category}</span>
         <span className="lecture-card-created-date">{dateFormat(startTime)}</span>
       </section>
-    </article>
+    </Link>
   );
 }
 

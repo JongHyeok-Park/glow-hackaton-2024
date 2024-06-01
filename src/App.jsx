@@ -4,6 +4,7 @@ import Main from './pages/Main';
 import Navbar from './components/navbar/Navbar';
 import Footer from './components/footer/Footer';
 import Category from './pages/Category';
+import Detail from './pages/Detail';
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Main />} />
         <Route path="/category" element={<Category />} />
+        <Route path="/detail/:type/:id" element={<Detail />} />
       </Routes>
       <Footer />
     </>

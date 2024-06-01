@@ -1,7 +1,7 @@
 import { getCookie } from '../utils/cookieManage';
 
-const getLecture = async () => {
-  const res = await fetch(`${import.meta.env.VITE_APP_API_URL_B}/api/mentoring`);
+const getLecture = async (id) => {
+  const res = await fetch(`${import.meta.env.VITE_APP_API_URL_B}/api/lecture?id=${id}`);
 
   if (!res.ok) {
     const message = await res.text();
@@ -12,7 +12,7 @@ const getLecture = async () => {
 };
 
 const postLecture = async (data) => {
-  const res = await fetch(`${import.meta.env.VITE_APP_API_URL_B}/api/mentoring`, {
+  const res = await fetch(`${import.meta.env.VITE_APP_API_URL_B}/api/lecture`, {
     method: 'POST',
     headers: {
       authorization: `Bearer ${getCookie('accessToken')}`,
@@ -29,7 +29,7 @@ const postLecture = async (data) => {
 };
 
 const deleteLecture = async (id) => {
-  const res = await fetch(`${import.meta.env.VITE_APP_API_URL_B}/api/mentoring?id=${id}`, {
+  const res = await fetch(`${import.meta.env.VITE_APP_API_URL_B}/api/lecture?id=${id}`, {
     method: 'DELETE',
     headers: {
       authorization: `Bearer ${getCookie('accessToken')}`,
