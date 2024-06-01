@@ -1,9 +1,9 @@
 import { create } from 'zustand';
 
-const useProfileStore = create((set) => ({
-  profile: {},
-  setProfile: (data) => set(() => ({ profile: data })),
-  resetProfile: () => set(() => ({ profile: {} })),
+const useUserStore = create((set) => ({
+  User: {},
+  setUser: (data) => set(() => ({ User: data })),
+  resetUser: () => set(() => ({ User: {} })),
 }));
 
-export default useProfileStore;
+export default useUserStore;
