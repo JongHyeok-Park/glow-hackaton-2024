@@ -2,7 +2,6 @@ import { Link } from 'react-router-dom';
 import LectureCard from '../components/card/LectureCard';
 import './Main.css';
 import ProfileCard from '../components/card/ProfileCard';
-import ChatDate from '../components/chat/ChatDate';
 
 function Main() {
   return (
