@@ -50,11 +50,13 @@ function Main() {
           {lectureList?.map((item) => {
             return (
               <LectureCard
+                id={item.id}
                 title={item.title}
                 subject={item.subject}
                 description={item.description}
                 category={item.category}
                 startTime={item.startTime}
+                type="lecture"
                 key={item.id}
               />
             );
@@ -72,11 +74,13 @@ function Main() {
           {mentoringList?.map((item) => {
             return (
               <LectureCard
+                id={item.id}
                 title={item.title}
                 subject={item.subject}
                 description={item.description}
                 category={item.category}
                 startTime={item.startTime}
+                type="mentor"
                 key={item.id}
               />
             );

@@ -30,6 +30,7 @@ function Category() {
         {lectureList?.map((item) => {
           return (
             <LectureCard
+              id={item.id}
               title={item.title}
               subject={item.subject}
               description={item.description}
