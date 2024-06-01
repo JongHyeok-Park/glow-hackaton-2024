@@ -1,0 +1,17 @@
+.detail-info-box {
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  border: 1px solid var(--neutral-color2);
+  border-radius: 20px;
+  min-width: 100px;
+}
+
+.detail-info-box-header {
+  display: flex;
+}
+
+.detail-info-box-date {
+  margin-left: auto;
+}
