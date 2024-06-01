@@ -1,5 +1,6 @@
 .lecture-card {
-  min-width: 0;
+  width: 100%;
+  max-width: 200px;
 }
 
 .lecture-card-image-wrapper {

@@ -1,7 +1,7 @@
 import { getCookie } from '../utils/cookieManage';
 
 const getMentoring = async (id) => {
-  const res = await fetch(`${process.env.REACT_APP_API_URL_B}/api/mentoring?id=${id}`);
+  const res = await fetch(`${import.meta.env.VITE_APP_API_URL_B}/api/mentoring?id=${id}`);
 
   if (!res.ok) {
     const message = res.text();
@@ -12,7 +12,7 @@ const getMentoring = async (id) => {
 };
 
 const postMentoring = async (data) => {
-  const res = await fetch(`${process.env.REACT_APP_API_URL_B}/api/mentoring`, {
+  const res = await fetch(`${import.meta.env.VITE_APP_API_URL_B}/api/mentoring`, {
     method: 'POST',
     headers: {
       authorization: `Bearer ${getCookie('accessToken')}`,
@@ -29,7 +29,9 @@ const postMentoring = async (data) => {
 };
 
 const getMentoringList = async (size, page) => {
-  const res = await fetch(`${process.env.REACT_APP_API_URL_B}/api/mentoring?pageSize=${size}&pageNumber=${page}`);
+  const res = await fetch(
+    `${import.meta.env.VITE_APP_API_URL_B}/api/mentoring/list?pageSize=${size}&pageNumber=${page}`,
+  );
 
   if (!res.ok) {
     const message = res.text();
