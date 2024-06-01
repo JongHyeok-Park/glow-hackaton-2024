@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import LectureCard from '../components/card/LectureCard';
 import './Main.css';
+import ProfileCard from '../components/card/ProfileCard';
 
 function Main() {
   return (
@@ -43,7 +44,12 @@ function Main() {
           </Link>
         </header>
         <section className="main-latest-profile-items">
-          <div>나중에 프로필 넣을 거임.</div>
+          <ProfileCard />
+          <ProfileCard />
+          <ProfileCard />
+          <ProfileCard />
+          <ProfileCard />
+          <ProfileCard />
         </section>
       </section>
     </main>
