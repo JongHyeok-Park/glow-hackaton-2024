@@ -38,7 +38,7 @@ function Main() {
       </section>
       <section className="main-latest-profile-container">
         <header className="main-latest-profile-header">
-          <h3>최신 등록된 과외 목록</h3>
+          <h3>새로 등장한 전문가</h3>
           <Link className="main-latest-profile-more" to="/">
             전체보기 &gt;
           </Link>
