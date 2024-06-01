@@ -1,0 +1,41 @@
+.lecture-card {
+  min-width: 0;
+}
+
+.lecture-card-image-wrapper {
+  height: 130px;
+  background-color: #d9d9d9;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.lecture-card-title {
+  font-size: 20px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.lecture-card-subject {
+  margin-bottom: 2px;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.lecture-card-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-bottom: 2px;
+}
+
+.lecture-card-info-wrapper {
+  display: flex;
+}
+
+.lecture-card-created-date {
+  margin-left: auto;
+  color: #9e9e9e;
+}
